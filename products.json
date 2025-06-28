@@ -1,0 +1,222 @@
+[
+    {
+        "id": 1,
+        "name": "Portuguesa",
+        "price": 10,
+        "image": "img\/fogazza.jpg",
+        "bestseller": true,
+        "description": "Presunto, Ovo, Cebola e Mussarela",
+        "soldout": false,
+        "category": "fogazza"
+    },
+    {
+        "id": 2,
+        "name": "Caipira",
+        "price": 10,
+        "image": "img\/fogazza.jpg",
+        "bestseller": false,
+        "description": "Frango, Milho e Mussarela ",
+        "soldout": false,
+        "category": "fogazza"
+    },
+    {
+        "id": 3,
+        "name": "Calabresa",
+        "price": 10,
+        "image": "img\/fogazza.jpg",
+        "bestseller": false,
+        "description": "Calabresa",
+        "soldout": false,
+        "category": "fogazza"
+    },
+    {
+        "id": 4,
+        "name": "Calabresa com Mussarela",
+        "price": 10,
+        "image": "img\/fogazza.jpg",
+        "bestseller": true,
+        "description": "Calabresa e Mussarela",
+        "soldout": false,
+        "category": "fogazza"
+    },
+    {
+        "id": 5,
+        "name": "Baiana",
+        "price": 10,
+        "image": "img\/fogazza.jpg",
+        "bestseller": false,
+        "description": "Calabresa, Cebola e Ovo",
+        "soldout": false,
+        "category": "fogazza"
+    },
+    {
+        "id": 6,
+        "name": "Carne e Queijo",
+        "price": 10,
+        "image": "img\/fogazza.jpg",
+        "bestseller": false,
+        "description": "Carne e Mussarela",
+        "soldout": false,
+        "category": "fogazza"
+    },
+    {
+        "id": 7,
+        "name": "Mussarela",
+        "price": 10,
+        "image": "img\/fogazza.jpg",
+        "bestseller": true,
+        "description": "Mussarela",
+        "soldout": false,
+        "category": "fogazza"
+    },
+    {
+        "id": 8,
+        "name": "2 queijos",
+        "price": 10,
+        "image": "img\/fogazza.jpg",
+        "bestseller": false,
+        "description": "Mussarela e Catupiry",
+        "soldout": false,
+        "category": "fogazza"
+    },
+    {
+        "id": 9,
+        "name": "Vegetariana",
+        "price": 10,
+        "image": "img\/fogazza.jpg",
+        "bestseller": false,
+        "description": "Escarola, Milho, Tomate, Cebola e orégano",
+        "soldout": false,
+        "category": "fogazza"
+    },
+    {
+        "id": 10,
+        "name": "Presunto e queijo",
+        "price": 10,
+        "image": "img\/fogazza.jpg",
+        "bestseller": false,
+        "description": "Presunto e Mussarela",
+        "soldout": false,
+        "category": "fogazza"
+    },
+    {
+        "id": 11,
+        "name": "Pizza",
+        "price": 10,
+        "image": "img\/fogazza.jpg",
+        "bestseller": true,
+        "description": "Presunto, Tomate, Mussarela e orégano",
+        "soldout": false,
+        "category": "fogazza"
+    },
+    {
+        "id": 12,
+        "name": "Brócolis",
+        "price": 10,
+        "image": "img\/fogazza.jpg",
+        "bestseller": false,
+        "description": "Mussarela, Catupiry, Brócolis e Orégano",
+        "soldout": false,
+        "category": "fogazza"
+    },
+    {
+        "id": 13,
+        "name": "Mexicana",
+        "price": 10,
+        "image": "img\/fogazza.jpg",
+        "bestseller": false,
+        "description": "Carne seca, Ovo, Pimenta e Cebola",
+        "soldout": false,
+        "category": "fogazza"
+    },
+    {
+        "id": 14,
+        "name": "Camarão",
+        "price": 10,
+        "image": "img\/fogazza.jpg",
+        "bestseller": false,
+        "description": "Camarão , Mussarela e catupiry",
+        "soldout": true,
+        "category": "fogazza"
+    },
+    {
+        "id": "67f8d737a5e56",
+        "name": "Coca cola 350ml",
+        "price": 5,
+        "image": "img\/coca.jpeg",
+        "bestseller": false,
+        "soldout": false,
+        "description": "Coca cola",
+        "category": "refrigerante"
+    },
+    {
+        "id": "67f8e070c2bca",
+        "name": "Coxinha",
+        "price": 2,
+        "image": "img\/ORIGINAL - GRUPO BENVINDA.jpeg",
+        "bestseller": false,
+        "soldout": false,
+        "description": "Frango",
+        "category": "salgado"
+    },
+    {
+        "id": "67f8e35520514",
+        "name": "Fanta Laranja 350ml",
+        "price": 5,
+        "image": "img\/fanta.jpeg",
+        "bestseller": false,
+        "soldout": false,
+        "description": "Fanta Laranja",
+        "category": "refrigerante"
+    },
+    {
+        "id": "67f8e47c0c99a",
+        "name": "Kibe",
+        "price": 2,
+        "image": "img\/Quibe Frito Delicioso.jpeg",
+        "bestseller": false,
+        "soldout": false,
+        "description": "Kibe de Carne",
+        "category": "salgado"
+    },
+    {
+        "id": "67f96be563cda",
+        "name": "Coca Cola 2L",
+        "price": 14,
+        "image": "img\/baixados.jpeg",
+        "bestseller": false,
+        "soldout": false,
+        "description": "Coca Cola",
+        "category": "refrigerante"
+    },
+    {
+        "id": "67f96c29e2a20",
+        "name": "Dolly 2L",
+        "price": 8,
+        "image": "img\/baixados (1).jpeg",
+        "bestseller": false,
+        "soldout": false,
+        "description": "Dolly",
+        "category": "refrigerante"
+    },
+    {
+        "id": "67f98ff1930be",
+        "name": "Pepsi Cola 2L",
+        "price": 12,
+        "image": "img\/Pepsi [Bottle].jpeg",
+        "bestseller": false,
+        "soldout": false,
+        "description": "Pepsi",
+        "category": "refrigerante"
+    },
+    {
+        "id": "67f990faca76f",
+        "name": "Guaraná Antartica 1L",
+        "price": 9,
+        "image": "img\/baixados (2).jpeg",
+        "bestseller": false,
+        "soldout": false,
+        "description": "Guaraná",
+        "category": "refrigerante"
+    }
+]

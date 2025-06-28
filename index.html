@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manias de Fogazza</title>
+  <link rel="icon" href="img/LOGO3.png" type="image/png" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <!-- Cabeçalho -->
+  <header id="topo">
+    <div class="header-container">
+      <div class="logo">
+        <img src="img/LOGO3.png" alt="Logo Salgados" />
+      </div>
+      <div id="cart-icon">🛒 <span id="cart-count">0</span></div>
+    </div>
+  </header>
+
+  <!-- Navegação -->
+  <nav>
+    <a href="#mais-vendidos">Mais Vendidas</a>
+    <a href="#todos-produtos">Todas as Fogazzas</a>
+    <a href="#promocoes">Promoções</a>
+    <a href="#search" class="nav-button">Buscar</a>
+  </nav>
+
+  <!-- Banner -->
+  <section class="banner">
+    <img src="img/bannernov.png" alt="Fogazza Promo Banner" />
+  </section>
+
+  <!-- Mais Vendidos -->
+  <section class="mais-vendidos" id="mais-vendidos">
+    <h2>
+      <img src="img/chamas.png" alt="Chamas" class="icone-chamas">
+      Mais Vendidas
+    </h2>
+    <div class="produto-lista" id="mais-vendidos-list"></div>
+  </section>
+
+  <!-- Pesquisa -->
+  <section id="search">
+    <h3>
+      <img src="img/LOGO3.png" alt="Logo" />
+      Buscar Fogazza
+    </h3>
+    <div>
+      <input type="text" id="searchInput" placeholder="Buscar Fogazza..." />
+      <button id="searchBtn">Buscar</button>
+    </div>
+  </section>
+
+  <!-- Todos os Produtos -->
+  <section class="todos-produtos" id="todos-produtos">
+    <h2>
+      <img src="img/persooculos.png" alt="Queijo" class="icone-queijo">
+      Todas as Fogazzas
+    </h2>
+    <div class="produto-lista" id="product-list"></div>
+  </section>
+
+  <!-- Categorias -->
+  <section class="categoria" id="salgados">
+    <h2>
+      <img src="img/persocoxinha.png" alt="Salgados" class="icone-chamas" />
+      Salgados
+    </h2>
+    <div class="produto-lista" id="salgados-list"></div>
+  </section>
+
+  <section class="categoria" id="refrigerantes">
+    <h2>
+      <img src="img/persococa.png" alt="Refrigerantes" class="icone-chamas" />
+      Refrigerantes
+    </h2>
+    <div class="produto-lista" id="refrigerantes-list"></div>
+  </section>
+
+  <!-- Promoção -->
+  <section class="promo-banner" id="promocoes">
+    <h3>Promoção da Semana</h3>
+    <p>Na compra de 3 fogazzas ganhe um refrigerante de 1L!</p>
+    <button class="btn-primary">Quero Aproveitar</button>
+  </section>
+
+  <!-- Modal de Produto -->
+  <div id="produto-modal" class="modal hidden">
+    <div class="modal-content">
+      <span id="close-produto-modal" class="close">&times;</span>
+      <img id="modal-produto-img" src="" alt="" />
+      <h2 id="modal-produto-nome"></h2>
+      <p id="modal-produto-preco"></p>
+      <p id="modal-produto-descricao"></p>
+
+      <div id="extras-container">
+        <div class="ingredientes-scroll">
+          <fieldset>
+            <div class="ingredientes-titulo">Ingredientes extras (+R$ 2,00 cada)</div>
+            <div class="ingredientes-lista">
+              <!-- Lista de ingredientes -->
+              <label><input type="checkbox" class="extra-ingrediente" value="Bacon"> Bacon</label>
+              <label><input type="checkbox" class="extra-ingrediente" value="Catupiry"> Catupiry</label>
+              <label><input type="checkbox" class="extra-ingrediente" value="Cheddar"> Cheddar</label>
+              <label><input type="checkbox" class="extra-ingrediente" value="Calabresa"> Calabresa</label>
+              <label><input type="checkbox" class="extra-ingrediente" value="Cebola"> Cebola</label>
+              <label><input type="checkbox" class="extra-ingrediente" value="Mussarela"> Mussarela</label>
+              <label><input type="checkbox" class="extra-ingrediente" value="Milho"> Milho</label>
+              <label><input type="checkbox" class="extra-ingrediente" value="Ervilha"> Ervilha</label>
+              <label><input type="checkbox" class="extra-ingrediente" value="Orégano"> Orégano</label>
+              <label><input type="checkbox" class="extra-ingrediente" value="Tomate"> Tomate</label>
+              <label><input type="checkbox" class="extra-ingrediente" value="Ovo"> Ovo</label>
+              <label><input type="checkbox" class="extra-ingrediente" value="Escarola"> Escarola</label>
+              <label><input type="checkbox" class="extra-ingrediente" value="Brócolis"> Brócolis</label>
+              <label><input type="checkbox" class="extra-ingrediente" value="Pimenta"> Pimenta</label>
+            </div>
+          </fieldset>
+        </div>
+      </div>
+
+      <div id="quantidade-container" class="hidden">
+        <label for="quantidade-produto"><strong>Quantidade:</strong></label>
+        <input type="number" id="quantidade-produto" value="1" min="1" style="width: 60px; margin-left: 10px;" />
+      </div>
+
+      <button id="adicionar-carrinho-modal">Adicionar ao Carrinho</button>
+    </div>
+  </div>
+
+  <!-- Modal de Carrinho -->
+  <div id="cart-modal" class="hidden cart-modal">
+    <div class="cart-header">
+      <h2>🛍️ Seu Pedido</h2>
+      <button id="close-cart"></button>
+    </div>
+    <div id="cart-items" class="cart-items"></div>
+    <div class="cart-footer">
+      <p>Frete: R$ <span id="frete-valor">4.99</span></p>
+      <strong>Total: R$ <span id="cart-total">0.00</span></strong>
+      <div class="cart-actions">
+        <button id="continuar-comprando" class="btn-primary">Continuar Comprando</button>
+        <button id="limpar-carrinho" class="btn-primary" style="background-color: #ffffff;">Esvaziar Carrinho</button>
+        <button id="finalizar-compra" class="btn-primary" type="button">Finalizar Pedido</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal de Checkout -->
+  <div id="checkout-modal" class="modal hidden">
+    <div class="modal-content">
+      <span id="close-checkout-modal" class="close">&times;</span>
+      <h2>Finalizar Pedido</h2>
+
+      <label>Nome: <input type="text" id="cliente-nome" /></label>
+      <label>CEP: <input type="text" id="cliente-cep" /></label>
+      <label>Endereço: <input type="text" id="cliente-endereco" /></label>
+      <label>Número da casa: <input type="text" id="cliente-numero" /></label>
+
+      <label>Forma de pagamento:
+        <select id="forma-pagamento">
+          <option value="pix">Pix</option>
+          <option value="cartao">Cartão</option>
+          <option value="dinheiro">Dinheiro</option>
+        </select>
+      </label>
+
+      <div id="troco-container" class="hidden">
+        <label>Precisa de troco para quanto?
+          <input type="text" id="troco-valor" placeholder="Ex: 50,00">
+        </label>
+      </div>
+
+      <label>Observações do pedido:
+        <textarea id="observacoes-pedido" placeholder="Ex: Sem cebola..."></textarea>
+      </label>
+
+      <button id="confirmar-pedido">Confirmar Pedido</button>
+    </div>
+  </div>
+
+  <!-- Toast de Notificação -->
+  <div id="toast" class="toast hidden"></div>
+
+  <!-- Rodapé -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <p>&copy; 2025 Manias de Fogazza.
+        Contato:
+        <a href="https://wa.me/5511961201454" target="_blank">WhatsApp</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+
+</body>
+</html>
